@@ -536,7 +536,7 @@ function populateFooterSection(data) {
   if (contactElements.address)
     contactElements.address.textContent = address || "Ghana";
   if (contactElements.phone)
-    contactElements.phone.textContent = phone || "054-362-6212";
+    contactElements.phone.textContent = phone || "053-260-7243";
   if (contactElements.email)
     contactElements.email.textContent = email || "dendy@gmail.com";
 }
