@@ -520,7 +520,7 @@ function populateFooterSection(data) {
 
   // Update social media links
   const socialLinks = document.querySelectorAll(".sosmed-icon a");
-  if (socialLinks.length >= 3) {
+  if (socialLinks.length >= 5) {
     socialLinks[0].href = facebookUrl || "#";
     socialLinks[1].href = instagramUrl || "#";
     socialLinks[2].href = linkedinUrl || "#";

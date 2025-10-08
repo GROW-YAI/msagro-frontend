@@ -5266,3 +5266,37 @@ Back To Top Section
  */
 
 /*# sourceMappingURL=style.css.map */
+
+.social-links {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link i {
+    font-size: 19px; 
+}
+
+.social-link:hover {
+    background: #8BAD21;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Ensure links are clickable */
+.social-link {
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 10;
+}
