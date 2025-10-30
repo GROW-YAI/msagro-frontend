@@ -540,3 +540,26 @@ function populateFooterSection(data) {
   if (contactElements.email)
     contactElements.email.textContent = email || "dendy@gmail.com";
 }
+
+
+
+// Add this script before closing </body> tag or in a separate JS file
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Get the navbar toggler button and collapse menu
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    // Add click event to each nav link
+    navLinks.forEach(function(navLink) {
+        navLink.addEventListener('click', function() {
+            // Check if the navbar is expanded (mobile view)
+            if (navbarCollapse.classList.contains('show')) {
+                // Close the navbar by simulating a click on the toggler
+                navbarToggler.click();
+            }
+        });
+    });
+});
